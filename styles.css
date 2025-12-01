@@ -347,7 +347,7 @@ button:hover {
     right: -14%;
     border-radius: 50%;
     background-color: rgb(0,24,25);
-    animation: pluse 1 infinite forwards;
+    animation: pluse 1s infinite forwards;
     box-shadow: 0 0 0 20px rgb(0, 128, 0 ,0);
 }
 
@@ -372,13 +372,115 @@ button:hover {
 }
 
 
+/* SKILLS SECTION */
 
+.skills {
+    gap: 100px;
+}
 
+.skills_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.skills_content p {
+    margin: 20px 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.Headings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: flex-start;
+}
 
+.Headings span {
+    color: rgb(121, 185, 0);
+    font-size: 1.5rem;
+}
 
+.Headings h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+    width: 90%;
+}
 
+.Headings h1 span {
+    font-size: 3rem;
+    font-weight: 600;
+}
 
+.skills_img{
+    width: 500;
+}
 
+.skills_img img {
+    width: 100%;
+}
+
+.skills_infos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.skills_info {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.skills_info h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.progres {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background-color: rgb(0,24,25);
+    position: relative;
+}
+
+.progres:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background-color: rgb(121, 185, 0);
+}
+
+.progres:before{
+    content: '90%';
+    position: absolute;
+    top: -30px;
+    left: 88%;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.skills_infos .skills_info:last-child .progres::after{
+    width: 80% !important;
+
+}
+
+.skills_infos .skills_info:last-child .progres::before{
+    left: 80% !important;
+    content: '80%';
+}
 
 
 
@@ -442,7 +544,15 @@ button:hover {
     .about {
         flex-direction: column;
         align-items: flex-start;
+    }
 
+    .skills{
+        flex-direction: column;
+    }
+
+    .skills_content,
+    .skills_img {
+        width: 100%;
     }
 }
 
@@ -501,5 +611,10 @@ button:hover {
     #aboutpic {
         width: 100%;
         height: auto;
+    }
+
+    .Headings h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
 }
