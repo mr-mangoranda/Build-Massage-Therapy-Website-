@@ -23,7 +23,7 @@ window.addEventListener('scroll',() =>{
 var swiper = new Swiper('.ServiceSwiper', {
     loop:true,
     autoplay:{
-        delay:3000,
+        delay:2000,
     },
     breakpoints:{
         0:{
