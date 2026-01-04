@@ -161,7 +161,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f00f16;
+    color: #fff;
     background-color: rgba(255,255,255,0.1);
     border-radius: 50px;
     transition: .6s;
@@ -187,8 +187,6 @@ button:hover {
     bottom: 0%;
     position: absolute;
 }
-
-
 
 .header-content h2{
     color: #AF9F30;
@@ -275,10 +273,11 @@ button:hover {
 }
 
 .about-content span {
-    color:  D1B000;
+    color:  #a08800;
 }
 
 .about-content h1 {
+    color: #550000;
     margin-top: 30px;
     font-size: 50px;
     line-height: 70px;
@@ -495,6 +494,55 @@ button:hover {
 }
 
 
+/* COUNTER SECTION  */
+
+.counter {
+    background-image: url(image/counter-bg.png);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-content: center;
+    place-items: center;
+    gap: 10px;
+}
+
+.count_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.count_box img {
+    margin: 20px 0;
+    transition: .3s;
+}
+
+.count_box h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.8rem;
+    transition: .3s;
+}
+
+.count_box h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.8rem;
+    transform: .3s;
+}
+
+.count_box:hover h1,
+.count_box:hover h2 {
+    color: #000;
+}
+.count_box:hover img {
+    filter: invert(100%);
+}
 
 /* MQ Section */
 
@@ -567,9 +615,10 @@ button:hover {
         width: 100%;
     }
 
-    .skills_content p {
-        font-size: 2rem;
+    .counter {
+        grid-template-columns: repeat(3, 1fr);
     }
+    
 }
 
 @media (max-width:900px) {
@@ -579,10 +628,17 @@ button:hover {
     .header-content p {
         width: 50%;
     }
+    #header-img{
+        width: 60%;
+        height: auto;
+    }
 
     .header-content h1 {
         font-size: 3rem;
         line-height: 3.5rem;
+    }
+    .counter {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -607,6 +663,12 @@ button:hover {
     .header-content p {
         width: 90%;
     }
+
+    #header-img{
+        width: 60%;
+        height: auto;
+    }
+
     .Social{
         left: -25%;
     }
@@ -632,5 +694,16 @@ button:hover {
     .Headings h1 {
         font-size: 2rem;
         line-height: 2.5rem;
+    }
+
+    .social-content p {
+        width: 30%;
+    }
+
+    .counter {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
