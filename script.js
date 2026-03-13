@@ -44,3 +44,14 @@ var swiper = new Swiper('.ServiceSwiper', {
         }
     }
 })
+
+// PROJECT SLIDER
+
+var swiper = new Swiper('.projectSwiper',{
+    slidesPerView:3,
+    spaceBetween:10,
+    loop:true,
+    autoplay:{
+        delay:2000,
+    },
+});

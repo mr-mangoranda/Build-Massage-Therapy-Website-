@@ -46,8 +46,9 @@
 }
 
 .navbar .logo a span{
-    color: #550000;
+    color: #fff;
     font-family: "Kaushan Script", serif;
+    font-weight: 700;
 }
 
 .navbar ul li{
@@ -312,6 +313,7 @@ button:hover {
     margin-top: 20px;
     text-align: center;
     color: #7e0000 !important;
+    font-size: 3rem;
 }
 
 .ServiceSwiper {
@@ -543,6 +545,19 @@ button:hover {
 .count_box:hover img {
     filter: invert(100%);
 }
+ /* PROJECTS SECTION */
+.projects {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+}
+ .projects .Headings {
+    width: 70%;
+ }
+ .projectSwiper {
+    width: 100%;
+ }
 
 /* MQ Section */
 
